@@ -1,0 +1,21 @@
+{
+  "name": "Instagram Brainrot Evaluator",
+  "description": "Find out just how brainrotty your reels are!",
+  "version": "1.0",
+  "permissions": ["storage", "tabs", "activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.instagram.com/reels/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "host-permissions": ["<all_urls>"],
+  "manifest_version": 3,
+  "action": {
+    "default_title": "Capture Screenshot",
+    "default_popup": "popup.html"
+  }
+}
