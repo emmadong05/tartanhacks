@@ -1,0 +1,1 @@
+export type Ok<T> = { status: string; message?: string, data: T };
