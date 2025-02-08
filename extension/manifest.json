@@ -2,7 +2,7 @@
   "name": "Instagram Brainrot Evaluator",
   "description": "Find out just how brainrotty your reels are!",
   "version": "1.0",
-  "permissions": ["storage", "tabs", "activeTab", "scripting"],
+  "permissions": ["tabCapture", "storage", "tabs", "activeTab", "scripting"],
   "background": {
     "service_worker": "background.js"
   },
@@ -12,10 +12,16 @@
       "js": ["content.js"]
     }
   ],
-  "host-permissions": ["<all_urls>"],
+  "web_accessible_resources": [
+    {
+      "resources": ["libs/html2canvas.min.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
   "manifest_version": 3,
   "action": {
-    "default_title": "Capture Screenshot",
-    "default_popup": "popup.html"
+    "default_title": "Capture Reel Audio",
+    "default_popup": "popup.html",
+    "default_icon": "export.png"
   }
 }

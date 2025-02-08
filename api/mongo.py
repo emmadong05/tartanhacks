@@ -35,6 +35,16 @@ class Mongo:
     def get_collection(self, collection_name: str):
         return self._db[collection_name]
 
+    def list_all_collections(self):
+        return self._db.list_collection_names()
+
 # Usage example:
 # mongo_helper = MongoDBHelper()
 # collection = mongo_helper.get_collection("mycollection")
+
+
+usersdb = Mongo().get_collection("users")
+groupsdb = Mongo().get_collection("groups")
+tagsdb = Mongo().get_collection("tags")
+scoresdb = Mongo().get_collection("scores")
+metricsdb = Mongo().get_collection("metrics")
