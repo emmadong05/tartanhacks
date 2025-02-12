@@ -1,5 +1,5 @@
 <div align='center'>
-	<h1 align='center'>Y2 Countdown</h1>
+	<h1 align='center'>Competitive Reeling</h1>
 	<img
 	    src="https://img.shields.io/github/license/vincent-qc/competitive-reeling?style=for-the-badge"
 	    alt="License"
@@ -10,7 +10,7 @@
 	/>
 </div>
 
-> TartanHacks 2025 Submission
+> A TartanHacks 2025 Submission
 
 ## What It Is
 
